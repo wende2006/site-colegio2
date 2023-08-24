@@ -1,0 +1,123 @@
+
+:root {
+    --azul-fundo: #1045EF;
+    --amarelo-fundo: #FFC700;
+}
+
+@media (min-width:920px){
+    header {
+        width: 100%;
+        left: 0px;
+        top: 0px;
+        background: var(--azul-fundo);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: #ffffff;
+    }
+    .alurastart-header {
+        margin-top: 9px;
+        width: 150px;
+    }
+    .header-lista-item {
+        display: inline-block;
+        margin: 0 20px;
+        font-size: 25px;
+    }
+
+
+
+    .escola {
+        width: 100%;
+        background: linear-gradient(360deg, var(--amarelo-fundo) 0%, var(--azul-fundo) 101.56%, var(--azul-fundo) 101.57%);
+    }
+    .escola-texto {
+        font-size: 20px;
+        padding: 100px 0 80px 6%; /*    PADDING: TOP RIGHT BOTTOM LEFT;    */
+        line-height: 30px;
+        color: #ffffff;
+       
+    }
+    .escola-titulo {
+        font-size: 30px;
+        font-weight: bold;
+        margin-left: 10%;
+        display: inline-block;
+        padding-bottom: 20px;
+    }
+    .escola-paragrafo-1 {
+        width: 88%;
+    }
+    .escola-paragrafo-2 {
+        width: 70%;
+        margin-top: 8px;
+    }
+    .escola-mesma-linha {
+        display: flex;
+        width: 88%;
+        justify-content: center;
+    }
+    .colegio-img {
+        width: 30%;
+        margin-left: 10px;
+        border-radius: 5px;
+    }
+
+
+
+    .estudantes {
+        background: var(--amarelo-fundo);
+    }
+    .estudantes-titulo {
+        font-size: 30px;
+        font-weight: bold;
+        margin: 0 0 20px 12.5%;
+    }
+    /* ao inves de usar 2 caixas, poderia usar:
+        display: grid;
+        grid-template-columns: 15% 15% 15% 15%;
+    e usar <span> no html para quebra de coluna
+    */
+    .estudantes-dados {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .caixa-estudante {
+        width: 65%;
+        border: #000000 solid 2px;
+        border-radius: 10px;
+        margin: 0 auto;
+        margin-bottom: 5%;
+    }
+    .caixa-imagem {
+        width: 85%;
+        height: 200px;
+        margin-top: 10px;
+        border-radius: 10px;
+    }
+    .caixa-contatos {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .caixa-contatos img {
+        width: 32px;
+        height: 32px;
+    }
+    .caixa-estudante h1 {
+        font-weight: bold;
+    }
+
+
+    footer {
+        width: 100%;
+        background: #000000;
+    }
+    .alurastart-footer {
+        width: 150px;
+        margin: 0 auto;
+        display: block;
+        padding: 9px 0;
+    }
+}
