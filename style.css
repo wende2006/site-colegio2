@@ -1,4 +1,3 @@
-
 :root {
     --azul-fundo: #1045EF;
     --amarelo-fundo: #FFC700;
@@ -116,6 +115,220 @@
     }
     .alurastart-footer {
         width: 150px;
+        margin: 0 auto;
+        display: block;
+        padding: 9px 0;
+    }
+}
+
+
+
+@media (max-width:460px) and (orientation: portrait){
+    header {
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 0.25em 0;
+        background: var(--azul-fundo);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: #ffffff;
+    }
+    .alurastart-header {
+        width: 65px;
+    }
+    .header-lista-item {
+        display: inline-block;
+        margin: 0 0.5em;
+        font-size: 1.5em;
+    }
+
+    .escola {
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 6% 88% 6%;
+        background: linear-gradient(360deg, var(--amarelo-fundo) 0%, var(--azul-fundo) 101.56%, var(--azul-fundo) 101.57%);
+        padding-bottom: 3vh;
+    }
+    .escola-texto {
+        font-size: 1em;
+        padding: 100px 0 80px 6%; /*    PADDING: TOP RIGHT BOTTOM LEFT;    */
+        line-height: 30px;
+        color: #ffffff;
+    }
+    .escola-titulo {
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-left: 10%;
+        display: inline-block;
+        padding-bottom: 20px;
+    }
+    .escola-paragrafo-2 {
+        margin-top: 0.1em;
+    }
+    .colegio-img {
+        width: 90%;
+        margin-left: 5%;
+        border-radius: 5px;
+    }
+
+    .estudantes {
+        background: var(--amarelo-fundo);
+    }
+    .estudantes-titulo {
+        font-size: 1.5em;
+        font-weight: bold;
+        margin: 0 0 1em 12.5%;
+    }
+    /* ao inves de usar 2 caixas, poderia usar:
+        display: grid;
+        grid-template-columns: 15% 15% 15% 15%;
+    e usar <span> no html para quebra de coluna
+    */
+    .estudantes-dados {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        text-align: center;
+    }
+   
+    .caixa-estudante {
+        width: 90%;
+        border: #000000 solid 2px;
+        border-radius: 10px;
+        margin: 0 auto;
+        margin-bottom: 0.8em;
+    }
+    .caixa-imagem {
+        width: 90%;
+        height: 187px;
+        margin-top: 0.3em;
+        border-radius: 10px;
+    }
+    .caixa-contatos {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .caixa-contatos img {
+        width: 32px;
+        height: 32px;
+    }
+    .caixa-estudante h1 {
+        font-weight: bold;
+    }
+
+    footer {
+        width: 100%;
+        background: #000000;
+    }
+    .alurastart-footer {
+        width: 65px;
+        margin: 0 auto;
+        display: block;
+        padding: 9px 0;
+    }
+}
+
+@media (max-width:915px) and (orientation: landscape){
+    header {
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 0.25em 0;
+        background: var(--azul-fundo);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: #ffffff;
+    }
+    .alurastart-header {
+        width: 130px;
+    }
+    .header-lista-item {
+        display: inline-block;
+        margin: 0 0.5em;
+        font-size: 1.5em;
+    }
+
+    .escola {
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 6% 88% 6%;
+        background: linear-gradient(360deg, var(--amarelo-fundo) 0%, var(--azul-fundo) 101.56%, var(--azul-fundo) 101.57%);
+        padding-bottom: 3vh;
+    }
+    .escola-texto {
+        font-size: 1em;
+        padding: 100px 0 80px 6%; /*    PADDING: TOP RIGHT BOTTOM LEFT;    */
+        line-height: 30px;
+        color: #ffffff;
+    }
+    .escola-titulo {
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-left: 10%;
+        display: inline-block;
+        padding-bottom: 20px;
+    }
+    .escola-paragrafo-2 {
+        margin-top: 0.1em;
+    }
+    .colegio-img {
+        width: 90%;
+        margin-left: 5%;
+        border-radius: 5px;
+    }
+
+    .estudantes {
+        background: var(--amarelo-fundo);
+    }
+    .estudantes-titulo {
+        font-size: 1.5em;
+        font-weight: bold;
+        margin: 0 0 1em 12.5%;
+    }
+    /* ao inves de usar 2 caixas, poderia usar:
+        display: grid;
+        grid-template-columns: 15% 15% 15% 15%;
+    e usar <span> no html para quebra de coluna
+    */
+    .estudantes-dados {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        text-align: center;
+    }
+   
+    .caixa-estudante {
+        width: 90%;
+        border: #000000 solid 2px;
+        border-radius: 10px;
+        margin: 0 auto;
+        margin-bottom: 0.8em;
+    }
+    .caixa-imagem {
+        width: 90%;
+        height: 187px;
+        margin-top: 0.3em;
+        border-radius: 10px;
+    }
+    .caixa-contatos {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .caixa-contatos img {
+        width: 32px;
+        height: 32px;
+    }
+    .caixa-estudante h1 {
+        font-weight: bold;
+    }
+
+    footer {
+        width: 100%;
+        background: #000000;
+    }
+    .alurastart-footer {
+        width: 65px;
         margin: 0 auto;
         display: block;
         padding: 9px 0;
